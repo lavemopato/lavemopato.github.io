@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Copse);
+@import url(https://fonts.googleapis.com/css?family=Amaranth);
+
+html {
+    background: url("../image/limabackground.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+nav,a {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #551d32;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+	color:white;
+}
+
+ul{			
+    list-style:none;
+				
+}
+
+li{
+    display:inline;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #311c47;
+}
+
+h1 {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 100px;
+    margin-bottom: 0;
+    margin-left: 50px;
+    margin-right: 50px; 
+}
+
+h2 {
+    font-family: 'Copse', serif;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #551d32;
+}
+
+#logo {
+    margin: auto;
+    padding: 60px;
+    width: 250px;
+}
+    
+ div {
+    align-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+img {
+    width: 30px;
+}
+
+
