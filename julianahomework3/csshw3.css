@@ -1,0 +1,72 @@
+body { 
+    background:url(trillium.gif) no-repeat bottom right,
+url(crazy.gif) top left no-repeat, url(arrow.png) no-repeat top right,
+url(bubble.jpg) bottom left no-repeat;
+    background-size:15px, 100px, 15px, 15px;
+    background-color:#CCFFFF;
+}
+
+h1 {
+    text-align:center;
+    color:#330066;
+    font-style:italic;
+}
+
+h3 {
+    text-align:center;
+    color:#FF0000; 
+    font-size:1.5em;
+    font-style:italic;
+}
+
+p:first-of-type {
+   text-align:center; 
+   font-size:1.25em;
+}
+
+span {
+    background-color:#FFCC00;
+    font-weight:bold;
+}
+
+#letterspacing {
+    text-align:center; 
+    letter-spacing:5px;
+}
+
+img {
+    width:150px;
+    height:140px;
+    margin-right:20px;
+    float:left;
+}
+
+table { 
+    width:300px;
+    border:2px;
+    border-style:outset;
+}
+
+th, td {
+    border:1px;
+    border-style:inset;
+}
+
+th {
+    color:#CC0000;
+}
+
+tr:nth-child(even) {
+    background-color:#999999;
+}
+
+.dropcap {
+    font-size:2.1875em; 
+    color:#FF0000;
+    font-weight:bold;
+    font-style:italic;
+    background-color:#CCFFFF;
+}
+
+ul {
+    list-style-image: url(trillium.gif);}
