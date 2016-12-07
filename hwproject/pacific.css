@@ -40,6 +40,10 @@ nav ul:first-child {font-weight: bold;
           padding: 0 20px 0 20px; 
 }
 
+h2 {color: #3399CC;
+font-family: Georgia, "Times New Roman", serif;
+text-shadow: 2px 2px 2px #666;
+}
 
 a {
    text-decoration: none;
@@ -51,11 +55,6 @@ a:link {
 
 a:visited {
     color: #344873;
-}
-
-h2 {color: #3399CC;
-font-family: Georgia, "Times New Roman", serif;
-text-shadow: 2px 2px 2px #666;
 }
 
 .companyname { color: #000033;
