@@ -64,15 +64,15 @@ ul {
     list-style-position: inside;
 }
 
+#adress {font-size: 90%;
+    clear: left;
+}
+
 footer {
     font-size: 75%;
     font-family: Georgia, "Times New Roman", serif;
     font-style: italic;
     padding-bottom: 5px;
-}
-
-#adress {font-size: 90%;
-    clear: left;
 }
 
 img {float: left;
