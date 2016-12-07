@@ -1,0 +1,153 @@
+body {background-image: url(background.jpg);
+      background-color: white;
+      color: darkgray;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {width: 80%;
+min-width: 960px;
+background-color: #90C7E3;
+box-shadow: 5px 5px 5px 5px #828282;
+margin-left: auto;
+margin-right: auto;
+}
+
+#content {margin-left: 150px;
+    padding: 0 20px 0 20px; 
+}
+
+nav {/*background-color: skyblue;*/
+    width: 130px;
+    float: left;
+    padding-right: 10px;
+}
+
+h1 {background-image: url(sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000033;
+    color: white;
+    font-family:Georgia, "Times New Roman", serif;
+    margin-bottom: 0;
+}
+
+nav ul:first-child {font-weight: bold;
+    list-style-position: inherit;
+    font-size: 1.2em;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:link {
+    color: #000033;
+}
+
+a:visited {
+    color: #344873;
+}
+
+h2 {color: #3399CC;
+font-family: Georgia, "Times New Roman", serif;
+text-shadow: 2px 2px 2px #666;
+}
+
+.companyname { color: #000033;
+        font-weight: bold;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+footer {
+    font-size: 75%;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+adress {font-size: 90%;
+    clear: left;
+}
+
+img {float: left;
+    border: 0;
+    width: 180px;
+    margin: 0 15px 15px 0;
+}
+
+#birdanimation { width: 68px;
+          height: 181px;
+          position: relative;
+          animation: birdanimation 4s linear forwards 2s;
+          -webkit-animation: birdanimation 4s linear forwards 2s;
+}
+
+h3 {color: #000033;}
+
+#clear {clear: left;}
+
+@keyframes birdanimation {
+0%   {left: 0px;}
+25%  {left: 150px;}
+50%  {left: 300px;}
+75%  {left: 450px;}
+100% {left: 600px;}
+}
+
+@-webkit-keyframes birdanimation {
+0%   {left: 0px;}
+25%  {left: 150px;}
+50%  {left: 300px;}
+75%   {left:450px;}
+100% {left: 600px;}
+}
+    
+@media screen and (max-width: 480px) {
+    
+    body {max-width: 480px;
+        max-height: 736px;
+        margin: auto;
+        color: #1c2f2f;
+    }
+    #wrapper {
+        box-shadow: none;
+        min-width: 90%;
+    }
+    
+    
+    ul {list-style-position: inherit;
+    margin: auto;
+    padding: 0;}
+    
+    h1 { background-image: none; 
+        margin: auto;
+        padding-left: 5px;
+
+    }
+    nav {float: none;
+        padding-top: 5px;
+        padding-left: 5px;
+        margin-bottom: 10px;
+        min-width: 90%;
+        background-color: #90C7E3;
+    }
+    
+    #content {
+        margin-left: 10px;
+        padding: 2px;
+    }
+    
+    form { padding: 2px;}
+    
+    li {display: inline;
+    padding-right: 8px;}
+    img {display: none;}
+    
+    #birdanimation {display: none;}
+}
