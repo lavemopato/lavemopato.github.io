@@ -5,11 +5,11 @@ body {background-image: url(background.jpg);
 }
 
 #wrapper {width: 80%;
-min-width: 960px;
-background-color: #90C7E3;
-box-shadow: 5px 5px 5px 5px #828282;
-margin-left: auto;
-margin-right: auto;
+          min-width: 960px;
+          background-color: #90C7E3;
+          box-shadow: 5px 5px 5px 5px #828282; 
+          margin-left: auto;
+          margin-right: auto;
 }
 
 h1 {background-image: url(sunset.jpg);
@@ -40,42 +40,37 @@ nav ul:first-child {font-weight: bold;
 }
 
 h2 {color: #3399CC;
-font-family: Georgia, "Times New Roman", serif;
-text-shadow: 2px 2px 2px #666;
+    font-family: Georgia, "Times New Roman", serif;
+    text-shadow: 2px 2px 2px #666;
 }
 
 img {float: left;
-    border: 0;
-    width: 180px;
-    margin: 0 15px 15px 0;
+     border: 0;
+     width: 180px;
+     margin: 0 15px 15px 0;
 }
 
-.resort { color: #000033;
-        font-weight: bold;
+.resort {color: #000033;
+         font-weight: bold;
 }
 
-ul {
-    list-style-position: inside;
+ul {list-style-position: inside;
 }
 
-a {
-   text-decoration: none;
+a {text-decoration: none;
 }
 
-a:link {
-    color: #000033;
+a:link {color: #000033;
 }
 
-a:visited {
-    color: #344873;
+a:visited {color: #344873;
 }
 
 #adress {font-size: 90%;
-    clear: left;
+         clear: left;
 }
 
-footer {
-    font-size: 75%;
+footer {font-size: 75%;
     font-family: Georgia, "Times New Roman", serif;
     font-style: italic;
     padding-bottom: 5px;
@@ -88,9 +83,11 @@ footer {
           -webkit-animation: birdanimation 4s linear forwards 2s;
 }
 
-h3 {color: #000033;}
+h3 {color: #000033;
+}
 
-#clear {clear: left;}
+#clear {clear: left;
+}
 
 @keyframes birdanimation {
 0%   {left: 0px;}
@@ -116,8 +113,7 @@ h3 {color: #000033;}
         color: #1c2f2f;
     }
     
-    #wrapper {
-        box-shadow: none;
+    #wrapper {box-shadow: none;
         min-width: 90%;
     }
     
@@ -139,16 +135,18 @@ h3 {color: #000033;}
         background-color: #90C7E3;
     }
     
-    #content {
-        margin-left: 10px;
+    #content {margin-left: 10px;
         padding: 2px;
     }
     
     form { padding: 2px;}
     
     li {display: inline;
-    padding-right: 8px;}
-    img {display: none;}
+    padding-right: 8px;
+    }
+    
+    img {display: none;
+    }
     
     #birdanimation {display: none;}
 }
