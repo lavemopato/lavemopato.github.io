@@ -159,7 +159,7 @@ input[type=reset] {
     padding-right: 8px;
     }
     
-    img {display: none;
+    img {display:none;
     }
     
     #birdanimation {display: none;}
