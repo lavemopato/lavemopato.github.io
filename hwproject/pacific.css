@@ -12,6 +12,15 @@ margin-left: auto;
 margin-right: auto;
 }
 
+h1 {background-image: url(sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000033;
+    color: white;
+    font-family:Georgia, "Times New Roman", serif;
+    margin-bottom: 0;
+}
+
 nav {/* background-color: skyblue; I delete because I wanted the background of the nav with the same color of the background of the wrapper */
     width: 130px;
     float: left;
@@ -29,15 +38,6 @@ nav ul:first-child {font-weight: bold;
 
 #content {margin-left: 150px;
           padding: 0 20px 0 20px; 
-}
-
-h1 {background-image: url(sunset.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color: #000033;
-    color: white;
-    font-family:Georgia, "Times New Roman", serif;
-    margin-bottom: 0;
 }
 
 
