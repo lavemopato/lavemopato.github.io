@@ -25,7 +25,6 @@ nav {/* background-color: skyblue; I delete because I wanted the background of t
     width: 130px;
     float: left;
     padding-right: 10px;
-    font-weight: bold;
 }
 
 nav ul:first-child {font-weight: bold;
@@ -45,6 +44,20 @@ font-family: Georgia, "Times New Roman", serif;
 text-shadow: 2px 2px 2px #666;
 }
 
+img {float: left;
+    border: 0;
+    width: 180px;
+    margin: 0 15px 15px 0;
+}
+
+.resort { color: #000033;
+        font-weight: bold;
+}
+
+ul {
+    list-style-position: inside;
+}
+
 a {
    text-decoration: none;
 }
@@ -57,14 +70,6 @@ a:visited {
     color: #344873;
 }
 
-.resort { color: #000033;
-        font-weight: bold;
-}
-
-ul {
-    list-style-position: inside;
-}
-
 #adress {font-size: 90%;
     clear: left;
 }
@@ -74,12 +79,6 @@ footer {
     font-family: Georgia, "Times New Roman", serif;
     font-style: italic;
     padding-bottom: 5px;
-}
-
-img {float: left;
-    border: 0;
-    width: 180px;
-    margin: 0 15px 15px 0;
 }
 
 #birdanimation { width: 68px;
