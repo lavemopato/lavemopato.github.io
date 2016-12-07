@@ -90,8 +90,17 @@ h3 {color: #000033;
 }
 
 input {
-    border: 2px solid red;
-    border-radius: 4px;
+    border: 1px solid #000033;
+    border-radius: 2px;
+}
+
+input[type=submit] {
+    background-color: #98FB98;
+    margin-right: 2px;
+}
+
+input[type=reset] {
+    background-color: #ff6961;
 }
 
 @keyframes birdanimation {
