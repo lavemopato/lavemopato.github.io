@@ -12,14 +12,23 @@ margin-left: auto;
 margin-right: auto;
 }
 
-#content {margin-left: 150px;
-    padding: 0 20px 0 20px; 
-}
-
-nav {/*background-color: skyblue;*/
+nav {/* background-color: skyblue; I delete because I wanted the background of the nav with the same color of the background of the wrapper */
     width: 130px;
     float: left;
     padding-right: 10px;
+    font-weight: bold;
+}
+
+nav ul:first-child {font-weight: bold;
+    list-style-position: inherit;
+    font-size: 1.2em;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+#content {margin-left: 150px;
+          padding: 0 20px 0 20px; 
 }
 
 h1 {background-image: url(sunset.jpg);
@@ -31,13 +40,6 @@ h1 {background-image: url(sunset.jpg);
     margin-bottom: 0;
 }
 
-nav ul:first-child {font-weight: bold;
-    list-style-position: inherit;
-    font-size: 1.2em;
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-}
 
 a {
    text-decoration: none;
@@ -115,6 +117,7 @@ h3 {color: #000033;}
         margin: auto;
         color: #1c2f2f;
     }
+    
     #wrapper {
         box-shadow: none;
         min-width: 90%;
