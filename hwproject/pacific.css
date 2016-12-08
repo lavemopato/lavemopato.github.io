@@ -63,6 +63,10 @@ a {text-decoration: none;
 a:link {color: #000033;
 }
 
+a:hover {
+    color: white;
+}
+
 a:visited {color: #344873;
 }
 
