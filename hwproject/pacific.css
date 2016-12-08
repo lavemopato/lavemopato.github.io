@@ -133,8 +133,7 @@ input[type=reset] {
         color: #1c2f2f;
     }
     
-    #wrapper {box-shadow: none;
-        min-width: 90%;
+    #wrapper { min-width: 90%;
     }
     
     h1 { background-image: none; 
