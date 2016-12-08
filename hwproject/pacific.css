@@ -27,7 +27,7 @@ nav {/* background-color: skyblue; I delete because I wanted the background of t
     padding-right: 10px;
 }
 
-nav ul:first-child {font-weight: bold;
+nav ul {font-weight: bold;
     list-style-position: inherit;
     font-size: 1.2em;
     margin: 0;
@@ -63,6 +63,10 @@ a {text-decoration: none;
 a:link {color: #000033;
 }
 
+a:hover {
+    color: white;
+}
+
 a:visited {color: #344873;
 }
 
@@ -82,6 +86,8 @@ footer {font-size: 75%;
           animation: birdanimation 4s linear forwards 2s;
           -webkit-animation: birdanimation 4s linear forwards 2s;
 }
+
+textarea {vertical-align: top;}
 
 h3 {color: #000033;
 }
@@ -130,6 +136,7 @@ input[type=reset] {
         min-width: 90%;
     }
     
+<<<<<<< HEAD
     
     nav ul:first-child {display: inline;
         list-style-position: inherit;
@@ -141,6 +148,8 @@ input[type=reset] {
         display: block;
     }
     
+=======
+>>>>>>> origin/master
     h1 { background-image: none; 
         margin: auto;
         padding-left: 5px;
@@ -149,21 +158,20 @@ input[type=reset] {
     nav {float: none;
         padding-top: 5px;
         padding-left: 5px;
-        margin-bottom: 10px;
         min-width: 90%;
         background-color: #90C7E3;
         
     }
     
     #content {margin-left: 10px;
-        padding: 2px;
+              padding: 2px;
     }
     
-    form { padding: 2px;}
+    nav li {display: inline;}
     
-    li {display: inline;
-    padding-right: 8px;
-    }
+    ul {margin: auto;
+    padding: 0;}
+    
     
     img {display:none;
     }
