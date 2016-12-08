@@ -131,10 +131,6 @@ input[type=reset] {
         min-width: 90%;
     }
     
-    
-    ul {margin: auto;
-    padding: 0;}
-    
     h1 { background-image: none; 
         margin: auto;
         padding-left: 5px;
@@ -152,6 +148,9 @@ input[type=reset] {
     }
     
     nav li {display: inline;}
+    
+    ul {margin: auto;
+    padding: 0;}
     
     
     img {display: none;
