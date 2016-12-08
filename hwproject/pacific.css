@@ -27,7 +27,7 @@ nav {/* background-color: skyblue; I delete because I wanted the background of t
     padding-right: 10px;
 }
 
-nav ul:first-child {font-weight: bold;
+nav ul {font-weight: bold;
     list-style-position: inherit;
     font-size: 1.2em;
     margin: 0;
@@ -101,11 +101,6 @@ input[type=submit] {
 
 input[type=reset] {
     background-color: #ff6961;
-}
-
-input[type=comment] {
-    height: 60px;
-    
 }
 
 @keyframes birdanimation {
