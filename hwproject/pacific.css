@@ -103,6 +103,10 @@ input[type=reset] {
     background-color: #ff6961;
 }
 
+input[type=comment] {
+    height: 60px;
+}
+
 @keyframes birdanimation {
 0%   {left: 0px;}
 25%  {left: 150px;}
