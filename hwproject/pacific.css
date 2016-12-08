@@ -63,11 +63,11 @@ a {text-decoration: none;
 a:link {color: #000033;
 }
 
-a:hover {
-    color: white;
+a:visited {color: #344873;
 }
 
-a:visited {color: #344873;
+a:hover {
+    color: white;
 }
 
 #adress {font-size: 90%;
