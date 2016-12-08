@@ -101,6 +101,10 @@ input {
     border-radius: 2px;
 }
 
+input:focus { 
+    background-color: yellow;
+}
+
 input[type=submit] {
     background-color: #98FB98;
     margin-right: 2px;
