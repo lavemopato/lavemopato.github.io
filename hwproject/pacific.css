@@ -87,6 +87,8 @@ footer {font-size: 75%;
           -webkit-animation: birdanimation 4s linear forwards 2s;
 }
 
+textarea {vertical-align: top;}
+
 h3 {color: #000033;
 }
 
