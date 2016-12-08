@@ -132,8 +132,7 @@ input[type=reset] {
     
 @media screen and (max-width: 480px) {
     
-    body {max-width: 480px;
-        margin: auto;
+    body {margin: auto;
         color: #1c2f2f;
     }
     
