@@ -132,8 +132,7 @@ input[type=reset] {
     }
     
     
-    ul {list-style-position: inherit;
-    margin: auto;
+    ul {margin: auto;
     padding: 0;}
     
     h1 { background-image: none; 
@@ -144,20 +143,16 @@ input[type=reset] {
     nav {float: none;
         padding-top: 5px;
         padding-left: 5px;
-        margin-bottom: 10px;
         min-width: 90%;
         background-color: #90C7E3;
     }
     
     #content {margin-left: 10px;
-        padding: 2px;
+              padding: 2px;
     }
     
-    form { padding: 2px;}
+    nav li {display: inline;}
     
-    li {display: inline;
-    padding-right: 8px;
-    }
     
     img {display: none;
     }
