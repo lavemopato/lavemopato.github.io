@@ -1,0 +1,87 @@
+body {background-color: black;
+}
+
+.content {background: white;
+         width: 80%;
+         margin: 0 auto;
+         position: relative;
+}
+
+#blank {height: 60px;
+    background: white;
+    width: 80%;
+    margin: auto;
+}
+
+main {float: left;
+    background: white;
+}
+
+ul {list-style: none;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    
+ }
+
+nav {   border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+padding: 15px;
+margin: auto;
+width: 80%;
+text-align: center;}
+
+li {padding-right: 20px;}
+
+#logo { width: 937px;
+    height: 371px;
+    margin: auto;
+    position: relative;
+    display: block;
+    padding: 20px;
+} 
+
+h4 {padding: 10px;}
+
+h1 {padding: 10px;}
+
+img {width: 533px;
+     height: 328px;
+     padding: 5px;
+     margin: auto;
+}
+
+aside {
+    margin: auto;
+    float: right;
+background: white;
+}
+
+url.rig {float: left;
+width: 200px;}
+
+ul.rig li {
+	display: inline;
+}
+
+ul.rig li img {
+	max-width: 20%;
+	height: auto;
+	margin: 0 0 0;
+}
+
+#grid {width: 40%;
+float: right;
+background: white;
+vertical-align: top;
+}
+
+li {display: inline;
+text-transform: uppercase;}
+
+p { width: 50%;
+   text-align: justify;
+   padding: 10px;
+margin-right: 20px;}
+
+
