@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2 - Basic Operations - Extracredit</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+
+        function convert() {
+            // parseFloat converts a string to a float-point number
+            var british = parseFloat(document.getElementById("brate").innerHTML);
+            var canadian = parseFloat(document.getElementById("canrate").innerHTML);
+            var euro = parseFloat(document.getElementById("eurorate").innerHTML);
+            var yen = parseFloat(document.getElementById("yenrate").innerHTML);
+            var mexicanpeso = parseFloat(document.getElementById("pesorate").innerHTML);
+            
+            var dollarAmount = parseFloat(document.forms["myform"].elements["dollar_value"].value);
+            // toFixed()  converts a number into a string, keeping a specified number of decimals. In this case 2
+            document.getElementById("pesv").innerHTML = (dollarAmount * mexicanpeso).toFixed(2);
+            document.getElementById("yenv").innerHTML = (dollarAmount * yen).toFixed(2);
+            document.getElementById("eurv").innerHTML = (dollarAmount * euro).toFixed(2);
+            document.getElementById("canv").innerHTML = (dollarAmount * canadian).toFixed(2);
+            document.getElementById("britv").innerHTML = (dollarAmount * british).toFixed(2);
+        }
+            
+    </script>
+    <script>
+           $(document).ready(function(){
+                $(".btn1").click(function(){
+                $("p").hide();
+  });
+                $(".btn2").click(function(){
+                $("p").show();
+  });
+});
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+        $('#dollar_value').focus(function() {
+		$(this).css('background-color','red');
+	}); 
+            });
+        });
+    </script>
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    
+</head>
+    
+<body class="extracredit">
+     <div id= "wrapper">
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+      <a class="nav-link" href="index.html">Home -</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="part1.html">Part 1 -</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="part2.html">Part 2 -</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="part3.html">Part 3 -</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="part4.html">Part 4 -</a>
+    </li>
+      <li class="nav-item navextracredit">
+      <a class="nav-link" href="extracredit.html">ExtraCredit</a>
+    </li>
+  </ul>
+ 
+</nav>
+    
+    <div id="pagename">
+    <h1>ExtraCredit</h1>
+    </div> 
+    
+
+<h3>Exchange rates table</h3>
+        <p>Enter a dollar amount in the table below to see the corresponding foreign exchange values<p>
+        <div id="buttons2">
+        <button class="btn1">Hide</button>
+            <button class="btn2">Show</button></div>
+        
+<section class="body">
+<form name="myform">
+<table>
+<thead>
+  <tr>
+    <th>Currency</th>
+      <th>Rate</th>
+    <th>Value</th>
+  </tr>
+    </thead>
+<tbody id="tbody">
+    <tr>
+        <td>British Pound</td>
+        <td id="brate">0.77521</td>
+        <td id="britv"></td>
+    </tr>
+    
+    <tr>
+        <td>Canadian Dollar	</td>
+        <td id="canrate">1.34461</td>
+        <td id="canv"></td>
+    </tr>
+    
+    <tr>
+        <td>Euro</td>
+        <td id="eurorate">0.88754</td>
+        <td id="eurv"></td>
+    </tr>
+    
+    <tr>
+        <td>Japanese Yen</td>
+        <td id="yenrate">109.350</td>
+        <td id="yenv"></td>
+    </tr>
+    
+    <tr>
+        <td>Mexican Peso</td>
+        <td id="pesorate">18.2806</td>
+        <td id="pesv"></td>
+    </tr>
+    
+    <tr>
+        <td colspan="2">Enter Amount in US Dollars</td>
+        <td>
+            <div>
+                <input type="number" name="dollar_value" id="dollar_value" onchange="convert()">
+            </div>
+        </td>
+    </tr>
+</tbody>
+</table>   
+    </form>
+</section>
+    
+        
+    <footer class="text-center">
+          <h5>Last updated: 02/23/2019 5:41 PM</h5>
+    <img src="images/images.png" alt="an icon of Html5">
+    <img src="images/vcss-blue.gif" alt="W3C logo">
+ </footer>
+         </div>
+    </div>
+        
+    
+</body>
+        
+</html>
