@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Functions part2">
+    <title>HW3 - Functions - Part 2</title>
+    <link rel="stylesheet" href="main.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( document ).tooltip();
+  } );
+  </script>
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    
+</head>
+    
+<body class="part2">
+     <div id= "wrapper">
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+      <a class="nav-link" href="index.html">Home -</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="part1.html">Part 1 -</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="part2.html">Part 2 -</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="part3.html">Part 3 -</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="part4.html">Part 4 </a>
+    </li>
+  </ul>
+ 
+</nav>
+        <section class="body">
+    
+    <div id="pagename">
+    <h1>Part2 - Sales Calculation</h1>
+    </div> 
+    
+        
+<form name="salesperson_total">
+
+    
+    <p><label for="salesperson">Salesperson:</label><input id="salesperson" title="Please make sure that the salesperson's name is spelled correctly."></p>
+
+<h3>Input the number of items sold for each item number:</h3>
+
+Item 1: <input class="t" type="text" name="num_item1" size="8"><br>
+Item 2: <input class="t" type="text" name="num_item2" size="8"><br>
+Item 3: <input class="t" type="text" name="num_item3" size="8"><br>
+Item 4: <input class="t" type="text" name="num_item4" size="8"><br><br>
+<input type="button" onclick="process()" value="Check Total">
+<input type="reset" value="Reset"><br><br>
+
+
+<table>
+<tbody><tr><th>Item </th><th>Value</th><th>Number Sold</th><th>Total</th></tr>
+
+<tr><td>1</td><td>$239.99</td><td><input type="text" class="t" name="int_item1"  readonly></td><td><input type="text" class="t" name="total_item1"  readonly></td></tr>
+<tr><td>2</td><td>$129.75</td><td><input type="text" class="t" name="int_item2"  readonly></td><td><input type="text" class="t" name="total_item2"  readonly></td></tr>
+<tr><td>3</td><td>$99.95</td><td><input type="text" class="t" name="int_item3"  readonly></td><td><input type="text" class="t" name="total_item3"  readonly></td></tr>
+<tr><td>4</td><td>$350.89</td><td><input type="text" class="t" name="int_item4"  readonly></td><td><input type="text" class="t" name="total_item4"  readonly></td></tr>
+<tr><td colspan="3">Total Amount Sold:</td><td><input type="text" class="t" name="final_total"  readonly></td></tr>
+<tr><td colspan="3">Total Weekly Earnings:</td><td><input type="text" class="t" name="salary"  readonly></td></tr>
+</tbody></table>
+
+</form>
+</section>
+    
+        
+    <footer class="text-center">
+<h5>Last updated: 02/25/2019 7:28 PM</h5>
+        <img src="images/images.png" alt="an icon of Html5">
+    <img src="images/vcss-blue.gif" alt="W3C logo">
+ </footer>
+         </div>
+    </div>
+        
+    
+    <script>
+
+    
+        
+    function process(){
+        
+        var item1 = parseInt(document.forms["salesperson_total"].elements["num_item1"].value);
+        var item2 = parseInt(document.forms["salesperson_total"].elements["num_item2"].value);
+        var item3 = parseInt(document.forms["salesperson_total"].elements["num_item3"].value);
+        var item4 = parseInt(document.forms["salesperson_total"].elements["num_item4"].value);
+        
+        
+        //alert to enter a number - veryfing if the number isNaN
+        
+        if(isNaN(item1) || isNaN(item2) || isNaN(item3) || isNaN(item4) ||isNaN(item3)){
+            window.alert("Please enter a number");
+        }
+            
+        if(isNaN(item1) || isNaN(item2) || isNaN(item3) || isNaN(item4) ||isNaN(item3)){
+            document.forms["salesperson_total"].elements["num_item1"].value = " "; //clears the field num_item1
+            ddocument.forms["salesperson_total"].elements["num_item2"].innerHTML = " "; 
+            document.forms["salesperson_total"].elements["num_item3"].value = " "; 
+            document.forms["salesperson_total"].elements["num_item4"].value = " ";
+}
+        
+        //alert in case of negative number
+        if (item1 < 0 || item2 < 0 || item3 < 0 || item4 < 0) {
+            window.alert("Please enter a positive number");
+        }
+        
+        // number sold column
+        document.forms["salesperson_total"].elements["int_item1"].value = item1;
+        document.forms["salesperson_total"].elements["int_item2"].value = item2;
+        document.forms["salesperson_total"].elements["int_item3"].value = item3;
+        document.forms["salesperson_total"].elements["int_item4"].value = item4;        
+        
+        //total column 
+        var total1 = (item1 * 239.99);
+        var total2 = (item2 * 129.75);
+        var total3 = (item3 * 99.95);
+        var total4 = (item4 * 350.89);
+        
+        document.forms["salesperson_total"].elements["total_item1"].value = '$' + total1.toFixed(2);
+        document.forms["salesperson_total"].elements["total_item2"].value = '$' + total2.toFixed(2);
+        document.forms["salesperson_total"].elements["total_item3"].value = '$' + total3.toFixed(2);
+        document.forms["salesperson_total"].elements["total_item4"].value = '$' + total4.toFixed(2);
+        
+        var totalAmountSold = total1 + total2 + total3 + total4;
+       document.forms["salesperson_total"].elements["final_total"].value = ('$' + totalAmountSold.toFixed(2));
+        
+        var totalWeeklyEarnings = ((totalAmountSold * 0.09) + 200);
+        document.forms["salesperson_total"].elements["salary"].value = ('$' + totalWeeklyEarnings.toFixed(2));
+        
+        
+    }
+        
+        
+</script>
+    
+    
+</body>
+        
+</html>

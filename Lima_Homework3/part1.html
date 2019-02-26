@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Functions Part1">
+    <title>HW3 - Functions - Part 1</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+    
+  <script>
+
+      function validateScore(fieldId, fieldName) {
+        var score = parseInt(document.forms["scores"].elements[fieldId].value);
+        if (score >= 0 && score <= 100) {
+          return score;
+        } else {
+          alert(fieldName + " field must be between 0 and 100");
+        }
+      }
+
+      function getLetterGrade(score) {
+        if (score < 0 || score > 100) {
+          alert('score must be between 0 and 100');
+          return;
+        } else if (score >= 90 && score <= 100) {
+          return 'A';
+        } else if (score >= 80 && score <= 89) {
+          return 'B';
+        } else if (score >= 70 && score <= 79) {
+          return 'C';
+        } else if (score >= 60 && score <= 69) {
+          return 'D';
+        } else {
+          return 'F';
+        }
+      }
+      
+      function displayResults(results) {
+        document.forms['scores'].elements['results'].value = results;
+      }
+        
+      function process() {
+        var homeworkAvg = validateScore("homeworkAvg", "homework average");
+        var midTermExamScore = validateScore("midTermExamScore", "mid-term exam score");
+        var finalExamScore = validateScore("finalExamScore", 'final exam score');
+        var acr = validateScore("acr", 'ACR');
+        if (homeworkAvg === undefined ||
+          midTermExamScore === undefined ||
+          finalExamScore === undefined ||
+          acr === undefined) {
+          return;
+        }
+        var finalAvg = Math.round(
+          0.5 * homeworkAvg + 0.2 * midTermExamScore + 0.2 * finalExamScore + 0.1 * acr
+        );
+        var grade = getLetterGrade(finalAvg);
+        if (grade == 'D' || grade == 'F') {
+          displayResults('Student must retake the course');
+        } else {
+          displayResults('Avg. is ' + finalAvg + '; grade is ' + grade);
+        }
+      }
+
+  </script>
+</head>
+    
+<body class="part1">
+    
+    
+    <div id= "wrapper">
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home -</a>
+            </li>
+        <li class="nav-item navpart1">
+                <a class="nav-link" href="part1.html">Part 1 -</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="part2.html">Part 2 -</a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part3.html">Part 3 -</a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part4.html">Part 4 </a>
+        </li>
+        
+        </ul>
+    </nav>
+    
+    <div id="pagename">
+    <h1>Part1 - Student Grades</h1>
+        </div>  
+        
+    <div id="flip">Click to Show/Hide Instructions</div>
+    <div id="panel">The following webpage contains the heading, Student Grades, and uses a script that inputs a student's homework average, mid-term exam score, final exam score, and ACR (all as integers).</div>
+        
+        <form name="scores">
+            
+            <h4>Student Grades</h4>
+
+            Homework average: <input type="text" class="n" name="homeworkAvg" size="10">
+
+            <br><br>
+    
+            Mid-term exam score: <input type="text" class="n" name="midTermExamScore" size="10">
+
+            <br><br>
+    
+            Final exam score: <input type="text" class="n" name="finalExamScore" size="10">
+
+            <br><br>
+            
+            ACR: <input type="text" class="n" size="10" name="acr">
+
+            <br><br>
+
+<input type="button" onclick="process()" value="See the Results">
+<input type="reset" value="RESET"><br><br>
+
+Results: <input type="text" readonly="" name="results" size="25">
+
+</form>
+    
+
+        
+        </div>
+        
+    <footer class="text-center">
+          <h5>Last updated: 02/25/2019 7:28 PM</h5>
+    <img src="images/images.png" alt="an icon of Html5">
+    <img src="images/vcss-blue.gif" alt="W3C logo">
+ </footer>
+    </div>
+        
+    
+</body>
+</html>

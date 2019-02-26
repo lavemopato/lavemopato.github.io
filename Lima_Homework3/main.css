@@ -1,0 +1,114 @@
+
+
+#main {
+    background-color: #FFFFFF;
+    border: 4px dashed #0099CC;
+    margin: 0px auto;
+    padding: 20px;
+    width: 900px;
+}
+
+.body { width: 550px; margin: 0px auto;}
+
+#wrapper {padding-top: 40px;
+    background-color: #CCFFFF;
+    height: 900px;}
+
+#pagename h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: #9370DB;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+
+input {
+    text-align: right;
+}
+
+form {padding-top: 20px;}
+ 
+#panel, #flip {
+  padding: 10px;
+  text-align: center;
+  background-color: #0099CC;
+  border: solid 2px #9370DB;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+.nav-item a {
+    color: black;
+    font-size: 1.3em;
+}
+
+.part1 .navpart1 a {
+    color:#DDA0DD;
+}
+
+.part2 .navpart2 a {
+    color:#DDA0DD;
+}
+
+.index .navindex a {
+    color: #DDA0DD;
+}
+
+.part3 .navpart3 a {
+    color: #DDA0DD;
+}
+
+.part4 .navpart4 a {
+    color: #DDA0DD;
+}
+
+.extracredit .navextracredit a {
+    color: #DDA0DD;
+}
+
+
+.drawings .navdrawings a {
+    color: black;
+    
+}
+
+#buttons2 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+p {text-align: center;}
+table {
+    background-color: #E6E6FA;
+    align-self: center;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+}
+
+footer img {
+    max-width: 100px;
+    padding-top: 10px;
+}
+
+footer h5 {
+    color: black;
+    font-size:1em;
+}

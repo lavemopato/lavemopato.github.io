@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Functions part4">
+    <title>HW3 - Functions - Part 4</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+</head>
+    
+<body class="part4">
+    
+    
+    <div id= "wrapper">
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+      <a class="nav-link" href="index.html">Home -</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="part1.html">Part 1 -</a>
+    </li>
+    <li class="nav-item navpart2">
+      <a class="nav-link" href="part2.html">Part 2 -</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="part3.html">Part 3 -</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="part4.html">Part 4 </a>
+    </li>
+  </ul>
+ 
+</nav>
+    
+        
+ <section class="body">
+     
+     <div id="pagename">
+    <h1>Part 4 - Math.radom()</h1>
+    </div> 
+     
+<div id="question">
+    
+    <span>How much is <span id="num1"> </span> times </span><span id="num2"> </span><span>?</span>
+    
+     </div>
+     
+<form name="myform">
+            
+            Type your Answer: <input type="number" class="n" name="answer" size="10">
+
+            <br><br>
+    
+<input type="button" onclick="checkResult()" value="See if you got it right!">
+<input type="reset" value="RESET">
+     </form>
+    
+</section>
+    
+   
+        
+        </div>
+        
+    <footer class="text-center">
+          <h5>Last updated: 02/25/2019 7:28 PM</h5>
+    <img src="images/images.png" alt="an icon of Html5">
+    <img src="images/vcss-blue.gif" alt="W3C logo">
+ </footer>
+    </div>
+
+<script>
+  function getRandomNumber(){
+    var randomNumber = Math.random();
+    return Math.round(randomNumber * 9);
+  }
+      
+  var num1 = getRandomNumber();
+  document.getElementById('num1').innerHTML = num1;
+
+  var num2 = getRandomNumber();
+  document.getElementById('num2').innerHTML = num2;
+
+  var expectedResult = num1 * num2;
+
+  function checkResult() {
+    var answer = parseInt(document.forms['myform'].elements['answer'].value);
+    if (expectedResult != answer) {
+      alert('No. Please try again.');
+    } else {
+      alert('Very Good!');
+    }
+  }
+</script>
+
+</body>
+
+</html>

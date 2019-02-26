@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Functions part3">
+    <title>HW3 - Functions - Part 3</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <script>
+
+
+        function celsius() {    
+            var fahrenheit = parseInt(document.forms["myform"].elements["temperature"].value);
+            
+            if (isNaN(fahrenheit)){
+              alert("Please input a numeric value");      
+            } else {
+              var celsius = 5/9 * (fahrenheit - 32);
+              document.forms['myform'].elements['results'].value = fahrenheit + " degrees Fahrenheit is = " + celsius + " degrees Celsius.";
+            }
+      }
+          
+           function fahrenheit() {    
+            var celsius = parseInt(document.forms["myform"].elements["temperature"].value);
+            
+            if (isNaN(celsius)){
+              alert("Please input a numeric value");      
+            } else {
+              var fahrenheit = (9/5 * celsius) + 32;
+              document.forms['myform'].elements['results'].value = celsius + " degrees Celsius is = " + fahrenheit + " degrees Fahrenheit.";
+            }
+      }
+        
+        
+
+
+</script>
+</head>
+    
+<body class="part3">
+    
+    
+    <div id= "wrapper">
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home -</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part1.html">Part 1 -</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part2.html">Part 2 -</a>
+            </li>
+            <li class="nav-item navpart3">
+                <a class="nav-link" href="part3.html">Part 3 -</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part4.html">Part 4 </a>
+            </li>
+        </ul>
+    </nav>
+    
+        
+ <section class="body">
+     
+<div id="pagename">
+    <h1>Part 3 - Temperature</h1>
+</div> 
+     
+<form name="myform">
+            
+    <h4>Convert Temperatures</h4>
+
+            Enter a temperature: <input type="text" class="n" name="temperature" size="10">
+
+            <br><br>
+    
+
+<input type="button" onclick="fahrenheit()" value="Convert Celsius to Fahrenheit">
+<input type="button" onclick="celsius()" value="Convert Fahrenheit to Celsius">
+<input type="reset" value="RESET"><br><br>
+
+Results: <input type="text" readonly="" name="results" size="50">
+
+</form>
+    
+
+</section>
+       
+        
+        </div>
+        
+    <footer class="text-center">
+          <h5>Last updated: 02/25/2019 7:28 PM</h5>
+    <img src="images/images.png" alt="an icon of Html5">
+    <img src="images/vcss-blue.gif" alt="W3C logo">
+ </footer>
+    </div>
+        
+    
+</body>
+</html>
