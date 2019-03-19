@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Looping ExtraCredit">
+    <title>HW4 - Looping Statements - Extracredit </title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  
+</head>
+    
+<body class="extracredit">
+    
+    
+    <div id= "wrapper">
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home -</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part1.html">Part 1 -</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part2.html">Part 2 -</a>
+            </li>
+            <li class="nav-item navpart3">
+                <a class="nav-link" href="extracredit.html">Extracredit</a>
+            </li>
+        </ul>
+    </nav>
+    
+        
+ <section class="body">
+     
+<div id="pagename">
+    <h1>Asterisks in a Square shape</h1>
+</div> 
+
+<form name="myform">
+    <table>
+        <tr>
+            <td>Type a Number Between 2 and 10:</td>
+            <td><input type="text" name="num1" size="10"></td>
+        </tr>
+    </table>
+<input type="button" onclick="process()" value="SUBMIT">
+<input type="reset" value="RESET">
+</form>
+     
+
+<script>
+
+function process (){
+  var number1 = document.forms["myform"].elements["num1"].value;
+  if (number1 < 2 || number1 > 10) {
+    alert("Please make sure that the number is between 2 and 10.");
+  }
+  else {
+      document.write( "<pre>" );
+        var s = number1;
+        var square = "";
+        //l = line c=column
+        for (var l = 1; l <= s; ++l) {
+            for (var c = 1; c <= s; ++c) {
+            //first line and first column has * and last column and last line has *
+                if (l == 1 || l == s || c == 1 || c == s) {
+                        square += "*";
+                } else {
+                        square += " ";
+        }
+        }
+         //JavaScript provides two ways to create line breaks within your string. The first is the newline character ( \n)
+    square += "\n";
+  }
+
+alert(square);
+
+   document.write( "</pre>" );
+  }
+
+ }
+
+</script>
+     
+     
+
+
+</section>
+       
+        
+        </div>
+        
+    <footer class="text-center">
+          <h5>Last updated: 03/18/2019 8:54 PM</h5>
+    <img src="images/images.png" alt="an icon of Html5">
+    <img src="images/vcss-blue.gif" alt="W3C logo">
+ </footer>
+    </div>
+        
+    
+</body>
+</html>
+

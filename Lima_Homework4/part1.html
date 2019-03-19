@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Looping Part1">
+    <title>HW4 - Looping Statement - Part 1</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+<style>
+  #draggable { width: 250px; height: 250px; padding: 0.5em; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
+</head>
+
+    
+<body class="part1">
+    
+    
+    <div id= "wrapper">
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home -</a>
+            </li>
+        <li class="nav-item navpart1">
+                <a class="nav-link" href="part1.html">Part 1 -</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="part2.html">Part 2 -</a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="extracredit.html">Extracredit -</a>
+        
+        </ul>
+    </nav>
+    
+    <div id="pagename">
+    <h1>Part1 - For Statement</h1>
+        </div> 
+    <p>Part 1a:</p>
+    
+    <script>
+
+        var sum = 0;
+        var product = 1;
+
+        for ( var number = 5; number <= 20; number += 3 ) { 
+            sum += number;
+            product *= number;
+  }
+
+        document.write( "The sum of the third integers " +  "from 5 to 20 is " + sum + ". " + "The product of the third integers from 5 to 20 is " + product + ".");    
+        
+    </script>
+        
+        <div id="draggable" class="ui-widget-content">
+        <p>Part 1b:</p>
+
+<script>
+var sum2 = 0;
+var x = 3;
+var product2 = 1;
+
+while ( x <= 31 ) {
+sum2 = sum2 + x;
+product2 = product2 *x;
+x = x + 4; 
+}
+document.write( "The sum of every fourth integers " +  "from 3 to 31 is " + sum2 + ". " + "The product of every fourth integers from 3 to 31 is " + product2 + "."); 
+    
+
+        </script>
+            </div>
+        
+        </div>
+        
+    <footer class="text-center">
+          <h5>Last updated: 03/18/2019 8:54 PM</h5>
+    <img src="images/images.png" alt="an icon of Html5">
+    <img src="images/vcss-blue.gif" alt="W3C logo">
+ </footer>
+    </div>
+        
+    
+</body>
+</html>

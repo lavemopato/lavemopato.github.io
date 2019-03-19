@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Looping Part2">
+    <title>HW4 - Looping Statement - Part 2</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+</head>
+    
+    <body class="part1">
+    
+    
+    <div id= "wrapper">
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home -</a>
+            </li>
+        <li class="nav-item navpart1">
+                <a class="nav-link" href="part1.html">Part 1 -</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="part2.html">Part 2 -</a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="extracredit.html">Extracredit </a>
+        </li>
+        
+        </ul>
+    </nav>
+    
+    <div id="pagename">
+    <h1>Part2 - For Statement</h1>
+    <table id="table">
+      <tr>
+        <th>Year</th>
+        <th>Amount on deposit</th> 
+        <th>Interest rate</th>
+      </tr>
+    </table>
+
+    <script>
+      let p = 1000;
+      let tableReference = document.getElementById("table");
+      var nRows = 0;
+    
+      for (let interestRate = 5; interestRate <= 10; interestRate++) {
+        for (let year = 1; year <= 10; year++) {
+          let pPlusInt = p * Math.pow(1 + interestRate / 100, year);
+
+          let newRow = tableReference.insertRow(nRows + 1);
+          nRows += 1;
+          
+          if (nRows % 2 == 0) {
+            newRow.classList.add('evenRow');
+          } else {
+            newRow.classList.add('oddRow');
+          }
+
+          let yearCell = newRow.insertCell(0);
+          yearCell.innerHTML = year;
+
+          let amountCell = newRow.insertCell(1);
+          amountCell.innerHTML = pPlusInt.toLocaleString("en", {style: "currency", currency: "USD"});
+
+          let intRateCell = newRow.insertCell(2);
+          intRateCell.innerHTML = interestRate/100;
+        }
+      }
+    </script>
+        </div>
+        </div>
+        </div>
+  </body>
+</html>
