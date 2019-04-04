@@ -1,0 +1,428 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+}
+
+.nav {
+font-family: 'Cabin', sans-serif;
+    font-size: 0.89em;
+margin: 5px;
+padding: 0;
+background-color: white;
+text-decoration: none;
+position: fixed;
+top: 0;
+width: 100%;
+    z-index: 11000;
+}
+
+
+.hybrido {display: block;
+padding: 30px;}
+
+.hybrido1 {
+    padding: 2px;
+    display: inline;
+    margin: auto;
+    float: left;
+    padding-left: 30px;
+}
+
+.about .navabout a {
+    color:black;
+}
+
+.index .navindex a {
+    color: black;
+}
+
+.contact .navcontact a {
+    color: black;
+}
+
+.drawings .navdrawings a {
+    color: black;
+}
+
+.main {
+    padding-top: 100px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.main a {
+    text-align: center;
+    font-size: 0.7em;
+    padding: 30px;
+    color: #45cac0;
+}
+
+.buttona {padding-bottom: 15px;
+clear: both;}
+
+.nav a {
+    color: rgb(254, 105, 20);
+    font-size: 1.3em;
+   padding: 10px;
+    float: left;
+}
+
+.nav .nav-link:hover {
+    color: #45cac0;
+}
+
+nav .nav-link:active {
+    color:  black;
+}
+
+#Inna {
+    border-top: 0.8px solid black;
+}
+
+#Inna h1 {
+    padding-top: 20px;
+    text-align: center;
+    color: #fe6914;
+    font-size: 1.7em;
+}
+
+#Inna p {
+          text-align: left;
+        font-size: 0.7em;
+        padding-left: 30px;
+    padding-right: 30px;
+        padding-bottom: 20px;
+}
+
+#portfolio h1 {
+    padding-top: 20px;
+    text-align: center;
+    color: #fe6914;
+    font-size: 1.7em;
+}
+
+#portfolio h2 {
+     text-align: left;
+        font-size: 1.2em;
+        padding-left: 30px;
+    padding-right: 30px;
+        padding-bottom: 20px;
+}
+
+.main h2 {
+    text-align: left;
+        font-size: 1.2em;
+        padding-left: 30px;
+    padding-right: 30px;
+        padding-bottom: 20px;
+}
+
+.nav a:hover {
+  color: #45cac0;
+}
+
+#newbutton {
+    padding-bottom: 20px;
+}
+
+#newbutton a:hover {
+    color: #45cac0;
+}
+
+
+.dropdown-toggle:valid {
+    background-color: #45cac0;
+}
+
+
+.logo {
+    position: fixed;
+    top: 55px;
+    z-index: 5000;
+    padding-left: 20px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo img {
+    max-width: 40%;
+}
+
+.main {
+    align-items: center;
+    text-align: center;
+}
+
+#carouselExampleIndicators {
+	width: 90%;
+    overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 2em;
+
+	-webkit-transition: all ease 500ms;
+	-moz-transition: all ease 500ms;
+	-o-transition: all ease 500ms;
+	-ms-transition: all ease 500ms;
+	transition: all ease 500ms;
+}
+
+
+  .carousel-indicators li{
+        border-radius: 2px;
+        width: 25%;
+    }
+
+#aboutp {
+    border-bottom: 0.8px solid black;
+}
+
+
+
+.galleryindex .card {
+    padding-top: 20px;
+    margin: 0;
+    align-items: center;
+}
+
+
+.card-columns .card{
+    border:none;
+    align-items: center;
+    text-align: center;
+}
+
+
+.card h5 {
+    font-size: 0.9em;
+    font-weight:600;
+    padding-top: 3px;
+}
+
+.card p {
+    border-bottom: none;
+    font-weight:100;
+    margin: auto;
+    font-size: 0.7em;
+}
+
+.card-body a {
+    border: none;
+    font-weight: 500;
+    font-size:1em;
+}
+
+
+.card img {
+    width: 80%;
+}
+
+.form-group {width: 90%;
+padding-left: 30px;
+text-align: left;}
+
+.btn btn-info {
+    background-color: #fe6914;
+}
+
+footer {clear:both;
+    border-top: 0.8px solid black;
+}
+
+footer p {
+    padding-top:5px;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.btn-btn-info {
+     background-color: #45cac0;
+    border:none;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-btn-info:hover {
+     background-color: #fe6914;
+}
+
+.button {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.hexa, .hexa div {
+    margin: 0 auto;
+overflow: hidden;
+}
+
+.hexa {
+  width: 200px;
+  height: 105px;
+}
+
+.hexa div {
+  width: 100%;
+  height: 100%;
+}
+
+.hexa {
+  transform: rotate(120deg);
+}
+.hex1 {
+  transform: rotate(-60deg);
+}
+.hex2 {
+  transform: rotate(-60deg);
+}
+
+.hex2 img {
+    padding-bottom: 40px;
+}
+
+.photo {
+align-content: center;
+padding-bottom: 20px;}
+
+#InnaAbout p {
+     text-align: left;
+        font-size: 0.7em;
+        padding-left: 30px;
+    padding-right: 30px;
+        padding-bottom: 20px;
+}
+
+.gallery2 img {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+#ProjectDescription h1 {
+     text-align: left;
+        font-size: 1.2em;
+        padding-left: 30px;
+    padding-right: 30px;
+        padding-bottom: 20px;
+}
+
+#ProjectDescription #aboutp {
+     text-align: left;
+        font-size: 0.7em;
+        padding-left: 30px;
+    padding-right: 30px;
+        padding-bottom: 20px;
+}
+
+
+.image-1  {
+     float: left;
+}
+
+.newbutton {
+    padding-bottom: 20px;
+}
+
+.image-1 img {
+    width: 80%;
+}
+
+.mouseover {
+    
+    width: 90%;
+    float: left;
+    padding: 10px;
+    overflow: inherit;
+}
+
+.mouseover a {
+    display: inline-grid;
+}
+
+#mainContent {
+    padding-left: 30px;
+}
+
+#ProjectDescription #aboutp {
+    border: none;
+}
+
+#Inna {
+    background-image: url(images/texture.svg);
+}
+
+
+
+
+
+@media (min-width: 600px) {
+   
+      #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+}
+
+
+@media (min-width: 900px) {
+     #gallery {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 30px;
+        }
+   
+    #carouselExampleIndicators {
+	width: 60%;}
+    
+    #Inna p {
+        column-count: 2;
+        text-align: left;
+        font-size: 1em;
+        margin: 0 20%;
+        padding-bottom: 20px;
+    }
+    
+    #InnaAbout p {
+        column-count: 2;
+        text-align: left;
+        font-size: 1em;
+        margin: 0 20%;
+        padding-bottom: 20px;
+    }
+    
+    .image-1 {
+        width: 60%;
+    }
+    
+    #ProjectDescription #aboutp {
+     
+    padding-right: 600px;
+       
+}    
+    .form-group {width: 50%;
+
+}
+}
+
+@media (min-width: 1200px) {
+    
+    #gallery {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 30px;
+        }
+    
+    .photos {
+    transition:transform 0.25s ease-in-out;
+}
+
+
+}
+
+}
+}
+
+
+
+
