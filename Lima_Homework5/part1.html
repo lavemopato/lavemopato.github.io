@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arrays Part1">
+    <title>HW5 - Arrays - Part 1</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    </head>
+
+
+    
+<body class="part1">
+    
+    
+    <div id= "wrapper">
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home -</a>
+            </li>
+        <li class="nav-item navpart1">
+                <a class="nav-link" href="part1.html">Part 1 -</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="part2.html">Part 2 -</a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part3.html">Part 3 </a>
+        
+        </ul>
+    </nav>
+    
+    <div id="pagename">
+    <h1>Part1 - Input text box, radio buttons, checkboxes, and select items</h1>
+        </div> 
+
+   
+    <table>
+        <tbody>
+            <tr>
+            <td>
+                <form action="formOK.html" method="post" id="myform" name="myform" onsubmit="return Validate(this.form)">
+                    <table>
+                        <tbody>
+                            <tr><td>Fill your information:</td>
+                            <td></td>
+                            <td></td></tr>
+                                <tr>
+  <td>Name:</td> 
+  <td><input type="text" name="name" id="name" size="30" class="required" autofocus="" aria-required="true"></td>
+    <td><div id="msg"></div></td>
+  </tr>
+<tr>
+   <td>Favorite Subject:</td>
+   <td>HTML
+       <input type="checkbox" id="subject1" name="subject" value="HTML" class="required" aria-required="true">
+   CSS
+       <input type="checkbox" id="subject2" value="CSS" name="subject">
+    JAVASCRIPT
+       <input type="checkbox" id="subject3" value="JAVASCRIPT" name="subject">
+   </td>
+    <td><div id="msg2"></div></td>
+   </tr>
+<tr>
+   <td>Class:</td>
+   <td>
+   <select name="class" class="required" aria-required="true">
+      <option value="">-Choose one-</option>
+      <option value="CNIT 131">CNIT 131</option>
+      <option value="CNIT 132">CNIT 132</option>
+      <option value="CNIT 133">CNIT 133</option>
+      <option value="other">other</option>
+   </select>
+   </td>
+   <td><div id="msg3"></div></td>
+   </tr>
+<tr>
+    <td>Grades:
+A
+    <input type="radio" id="rating1" name="rating" class="required" value="good" aria-required="true">
+B
+    <input type="radio" id="rating2" name="rating" class="required" value="good" aria-required="true">
+C
+    <input type="radio" id="rating3" name="rating" class="required" value="good" aria-required="true">
+D
+    <input type="radio" id="rating4" name="rating" class="required" value="good" aria-required="true">
+F
+    <input type="radio" id="rating5" name="rating" class="required" value="good" aria-required="true">
+     </td>
+<td></td>
+ <td><div id="msg4"></div></td>
+</tr>
+      
+  <tr>
+  <td><input type="submit" value="SUBMIT"></td>
+  <td><input type="reset" value="RESET" onclick="window.location.reload();"></td>
+  <td><input type="reset" value="clear msgs" onclick="res();"></td>
+  </tr>
+      
+  </tbody>
+        </table>
+  </form>
+</td>
+</tr>
+</tbody>    
+        </table>
+        
+        <footer class="text-center">
+          <h5>Last updated:Last updated: 04/08/2019 8:00 PM</h5>
+    <img src="images/images.png" alt="an icon of Html5">
+    <img src="images/vcss-blue.gif" alt="W3C logo">
+ </footer>
+    
+            </div>
+  
+        </div>
+    
+<script>
+
+function Validate(event) {	
+    
+   
+    var msg = "Enter a name";
+    var msg2 = "Check a subject";
+    var msg3 = "Select a class";
+    var msg4 = "Check a grade";
+    var isValid = 0;  
+  	
+    var name = document.getElementById("name").value;
+        
+  	     if (name == "" || name == null) {          	
+             document.getElementById("msg").innerHTML = msg;
+            isValid = 1;
+        }   
+    
+    var checkBox = false;
+
+    for (var i=0; i<3; ++i) {
+        if (document.myform.subject[i].checked) {
+            checkBox = true;
+            break;
+        }
+    }
+
+    if (checkBox == false) {
+        document.getElementById("msg2").innerHTML = msg2; 
+        isValid = 1;
+    }
+  
+
+    var selectClass = document.forms["myform"].elements["class"].selectedIndex;
+
+    if (selectClass < 1)  
+    {
+      document.getElementById("msg3").innerHTML = msg3;
+        isValid = 1;
+    }
+
+    
+ var gradeChecked = false;
+
+ for (var i=0; i<5; ++i) {
+    if (document.myform.rating[i].checked) {
+         gradeChecked = true;
+         break;
+       }
+ }
+
+  if (gradeChecked == false) {
+     document.getElementById("msg4").innerHTML = msg4; 
+      isValid = 1;
+    }
+    
+    if (isValid == 0) {
+        return true;
+    } else {
+        return false;
+    }
+    
+    
+    
+}
+
+    
+    function res () {
+        document.getElementById("msg").innerHTML = " ";
+        document.getElementById("msg2").innerHTML = " ";
+         document.getElementById("msg3").innerHTML = " ";
+        document.getElementById("msg4").innerHTML = " ";
+    }
+   
+</script>
+        
+        
+    
+</body>
+</html>
