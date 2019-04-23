@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Objects Part2">
+    <title>HW6 - Objects - Part 2</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+<body class="part2">
+    
+    
+    <div id= "wrapper">
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home -</a>
+            </li>
+        <li class="nav-item navpart1">
+                <a class="nav-link" href="part1.html">Part 1 -</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="part2.html">Part 2 -</a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part3.html">Part 3 </a>
+        </li>
+        
+        </ul>
+    </nav>
+    
+    <div id="pagename">
+    <h1>Part2 - charAt</h1>
+        
+    
+                
+                
+<form name="myForm">
+         
+        <span>Enter a character to search for:</span>
+            <input id="key" type="text" size="5">
+            <input type="button" value="Search" onclick="search();">
+             <input type="reset" value="Reset" onclick="location.reload();">
+
+         <br><br>
+            
+        <span> Write a message: </span>
+            <textArea id ="message" rows="6" cols="50" ></textArea>
+       <br><br>
+    
+          <div>
+         Number of occurrences: <textarea cols="20" rows="1" id="output"></textarea>
+                    </div>
+      </form>
+
+
+
+             <footer class="text-center">
+          <h5>Last updated: 04/22/2019 8:00 PM</h5>
+    <img src="images/images.png" alt="an icon of Html5">
+    <img src="images/vcss-blue.gif" alt="W3C logo">
+ </footer>
+        
+        </div>
+        </div>
+        </div>
+
+       <script>
+
+         function search()
+         {
+            var count=0;
+            
+            var key=document.getElementById("key").value.toLowerCase().charAt( 0 );
+             var key=key.toLowerCase();
+
+            var stringToSearch= document.getElementById("message").value;
+            var stringToSearch=stringToSearch.toLowerCase(); 
+  
+                        
+             for (i=0; i < stringToSearch.length; i++)
+                     {
+
+                    if (stringToSearch.charAt(i) == key)
+                             count++;     
+                     }         
+      
+            if ( count == 0 ) {
+               alert('Search character not found in text string!');
+               window.open("notfound.html", "marian", "width=300,height=100");}
+            
+             else{
+               document.getElementById("output").value=count + 
+                  " occurrence(s) of " + key + " found";}
+         }
+</script>
+        
+      
+
+  </body>
+</html>

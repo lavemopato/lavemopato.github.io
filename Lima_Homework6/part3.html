@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Objects Part 3">
+    <title>HW6 - Objects - Part 3</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   <script>
+         
+         function parseNumber() {
+       
+            var errMsg="Phone number has wrong format - Please use (999) 999-9999";     
+
+            var phoneNumber = document.getElementById("input").value;
+
+             phoneRegExp = /^(\()(\d{3})(\))(\s)(\d{3})(-\d{4})$/;
+            
+            // test to see if input is in valid format using a regular excpression
+      
+            if ( ! phoneRegExp.test(phoneNumber)) {
+
+                alert(errMsg);}
+
+            else  {  
+
+                   // split zip main and zip extension
+                   var tokens = phoneNumber.split( "-" );
+                   var phoneMain = tokens[ 0 ];
+                   var phoneExt = tokens[ 1 ];
+
+                  // area Code
+                var phoneArea = phoneMain.substr( 1, 3 );
+                   document.getElementById("areaCode").value = phoneArea;
+
+                  // output phone extension
+                  document.getElementById("phone4").value = phoneExt;
+
+                  //get firts 3 characters of phone main
+                 var phone3 = phoneMain.substr( 6, 3 );
+                  document.getElementById("phone3").value = phone3;
+         
+                 }
+
+         }
+       
+        
+        function res() {   
+                       document.getElementById("input").focus();
+                       }
+</script>
+  
+</head>
+    
+<body class="part3">
+
+<div id= "wrapper">
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home -</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part1.html">Part 1 -</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part2.html">Part 2 -</a>
+            </li>
+            <li class="nav-item navpart3">
+                <a class="nav-link" href="extracredit.html">Part3</a>
+            </li>
+        </ul>
+    </nav>
+        
+        <section class="body">
+
+<h3>Date and Phone Number</h3>
+            
+
+
+
+      <script>
+
+         //output local date and time, UTC date and time, and difference
+       
+          var current = new Date();
+          document.writeln( "<b>Current local date and time: " +
+                     current.toString() + "<br>Current UTC time and date: " + 
+                    current.toUTCString() + "<br>  Hours difference between local/PDT and UTC time zones: " +  
+                    (current.getTimezoneOffset() / 60) +  "<br>  Hours difference between EST and UTC time zones: " + 
+                    (current.getTimezoneOffset() / 60000) + "</b>" );
+
+      </script>
+
+<br><br>
+
+            
+            <form name="myForm">
+         <table>
+            <tbody><tr>
+                
+               <td>Enter your Phone Number <br>
+                  [in the form (999) 999-9999]
+               </td>
+               <td>
+                   <input type="text" id="input" name="phone-number" size="10">
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <input type="button" value="Split" onclick="parseNumber()">
+               </td>
+            </tr>
+            <tr>
+               <td>Area Code:</td>
+               <td>
+                  <input id="areaCode" type="text" size="5">
+               </td>
+            </tr>
+           <tr>
+               <td>First 3 characters of Phone Number</td>
+                 <td>
+                   <input id="phone3" type="text" size="4">
+                 </td>
+               
+            </tr>
+                
+                 <tr>
+               <td>Z last 4 digits of the phone number :</td>   
+               <td>
+                   <input id="phone4" type="text" size="4">
+               </td>
+           </tr>
+         </tbody></table>
+         <input type="reset" value="Reset" onclick="res();">
+      </form>
+            
+    
+</section>
+
+
+     
+        <footer class="text-center">
+          <h5>Last updated: 04/22/2019 8:00 PM</h5>
+    <img src="images/images.png" alt="an icon of Html5">
+    <img src="images/vcss-blue.gif" alt="W3C logo">
+ </footer>
+     
+        
+        </div>
+        
+    </div>
+        
+    
+</body>
+</html>
+
