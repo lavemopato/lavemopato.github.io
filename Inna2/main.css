@@ -16,6 +16,11 @@ width: 100%;
     z-index: 11000;
 }
 
+video {
+   float: left;
+    display: block;
+}
+
 
 .hybrido {display: block;
 padding: 30px;}
@@ -328,6 +333,11 @@ padding-bottom: 20px;}
     width: 80%;
 }
 
+.image-affectu img {
+    display: block;
+    width: 80%;
+    padding-top: 10px;
+}
 .mouseover {
     
     width: 90%;
