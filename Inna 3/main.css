@@ -1,0 +1,149 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+}
+
+.nav {
+font-family: 'Cabin', sans-serif;
+margin: 10;
+padding: 0;
+background-color: white;
+text-decoration: none;
+position: fixed;
+top: 0;
+width: 100%;
+    z-index: 11000;
+}
+
+
+.main {
+    padding-top: 105px;
+}
+
+.main p {
+    text-align: center;
+    font-size: 0.7em;
+    padding-bottom: 10px;
+    border-bottom: 0.8px solid black;
+}
+
+.nav a {
+    color: rgb(254, 105, 20);
+    font-size: 1.3em;
+   padding: 10px;
+    float: left;
+}
+
+#Inna h1 {
+    text-align: center;
+    color: #fe6914;
+    font-size: 1.7em;
+}
+
+#Inna p {
+        
+        text-align: left;
+        font-size: 0.7em;
+        padding-left: 30px;
+    padding-right: 30px;
+        padding-bottom: 20px;
+}
+
+.nav a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.nav-item dropdown a:visited {
+    background-color: black;
+}
+
+.logo {
+    position: fixed;
+    top: 65px;
+    z-index: 5000;
+    padding-left: 20px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo img {
+    max-width: 40%;
+}
+
+
+#carouselExampleIndicators {
+	width: 90%;
+    height: 300px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 0.7em;
+
+	-webkit-transition: all ease 500ms;
+	-moz-transition: all ease 500ms;
+	-o-transition: all ease 500ms;
+	-ms-transition: all ease 500ms;
+	transition: all ease 500ms;
+}
+
+.hexa, .hexa div {
+    margin: 0 auto;
+overflow: hidden;
+}
+
+.hexa {
+  width: 200px;
+  height: 105px;
+}
+
+.hexa div {
+  width: 100%;
+  height: 100%;
+}
+
+.hexa {
+  transform: rotate(120deg);
+}
+.hex1 {
+  transform: rotate(-60deg);
+}
+.hex2 {
+  transform: rotate(-60deg);
+}
+
+.photos {
+float: right;
+    
+    
+}
+
+.photos h2 {
+    font-size: 1em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.photos p {
+    border-bottom: none;
+    padding-top: -5px;
+}
+
+.hex2 img {
+    padding: 10px;
+    float: right;
+
+}
+
+footer {clear:both;
+    border-top: 0.8px solid black;
+}
+
+footer p {
+    padding-top:5px;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+
+
