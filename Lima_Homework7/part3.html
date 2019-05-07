@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Object Model and Miscellaneous jQuery Part3">
+    <title>HW7 - Object Model and Miscellaneous jQuery - Part 3</title>
+    <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+</head>
+<body>
+
+<div id= "wrapper" class="part3">
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home -</a>
+            </li>
+        <li class="nav-item navpart1">
+                <a class="nav-link" href="part1.html">Part 1 -</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="part2.html">Part 2 -</a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part3.html">Part 3 </a>
+        </li>
+        
+        </ul>
+    </nav>
+    
+    <div id="pagename">
+    <h1>Part3 - Fancybox</h1>
+        </div>
+    
+<p>
+ Create a photo slide-show using jQuery. For an explanation of the Advanced Gallery with jQuery FancyBox see this page http://fancybox.net/howto (Links to an external site.)Links to an external site. but pay attention as this is the older version and a newer version can be found here http://fancyapps.com/fancybox/3/ (Links to an external site.)Links to an external site.  The following tutorial is helpful for creating the slide-show with Fancybox 
+Image gallery by using Fancybox 3 (Links to an external site.)Links to an external site.
+</p>
+     
+
+<hr class="my-5" />
+           <h3>Some of my Illustrations:</h3>
+
+<p class="imglist" style="max-width: 1000px;">
+  <a href="images/Coffeedream2.jpg" data-fancybox="images" data-caption="A cup of coffee, books, and many dreams">
+    <img src="images/coffeesmall.jpg" alt="An illustration of coffee"/>
+  </a>
+
+  <a href="images/ballerina.jpg" data-fancybox="images" data-caption="A ballerina">
+    <img src="images/ballerinasmall.jpg" alt="A ballerina" />
+  </a>
+
+  <a href="images/Arya4.jpg" data-fancybox="images" data-caption="Arya Stark">
+    <img src="images/Arya4small.jpg" alt="An illustration of Arya Stark" />
+  </a>
+
+  <a href="images/CollegeCupcake2.jpg" data-fancybox="images" data-caption="A college Cupcake">
+    <img src="images/CollegeCupcake2small.jpg" alt="An illustration of a cupcake in a college"/>
+  </a>
+
+  <a href="images/bubblegumgirl.jpg" data-fancybox="images" data-caption="Bubble Gum Girl">
+    <img src="images/ballerinasmall.jpg" alt="An illustration of a girl" />
+  </a>
+
+</p>
+
+	<!-- JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script>
+    $('[data-fancybox="images"]').fancybox({
+  buttons : [ 
+    'slideShow',
+    'share',
+    'zoom',
+    'fullScreen',
+    'close'
+  ],
+  thumbs : {
+    autoStart : true
+  }
+});
+</script>
+        
+        <footer class="text-center">
+          <h5>Last updated: 05/06/2019 8:00 PM</h5>
+    <img src="images/images.png" alt="an icon of Html5">
+    <img src="images/vcss-blue.gif" alt="W3C logo">
+ </footer>
+        </div></div>
+</body>
+</html>

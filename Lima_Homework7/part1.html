@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Object Model and Miscellaneous jQuery Part1">
+    <title>HW7 - Object Model and Miscellaneous jQuery - Part 1</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    
+    </head>
+
+
+    
+<body id="body" class="part1" data-gr-c-s-loaded="true">
+    
+   
+<section id="content">
+    
+     
+    
+    <div id="main">
+        
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home -</a>
+            </li>
+        <li class="nav-item navpart1">
+                <a class="nav-link" href="part1.html">Part 1 -</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="part2.html">Part 2 -</a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="part3.html">Part 3 </a>
+        
+        </ul>
+    </nav>
+<div id="pagename">
+    <h1>Part1 - className property</h1>
+        </div> 
+
+<h2>ClassName Example
+</h2>
+
+
+<form name="myform">
+<p class="main"><b>Customize the font and background:</b></p>
+<br>
+
+<!-- selecting the second option will execute the function selectFontSize()
+and pass the second element whose value is small to the function's variable of
+selectedFontSize, which gets is linked to the select id of fontSizeDropDown 
+Then if the selectedFontSize has the value of small then the table class of originalTable
+is set to the style of small basicTable.
+-->
+
+<table class="basicTable" id="originalTable">
+    <tbody><tr>
+<!-- clicking the first radio button will execute the function switchStyle
+and pass the first element in the radio button array, i.e., 0 to the function -->
+
+<td>
+Background: <br>
+<input type="radio" name="style" onclick="switchStyle(0)">Pink
+</td>
+
+<!-- clicking the second radio button will execute the function switchStyle
+and pass the second element in the radio button array, i.e., 1 to the function -->
+
+<td>
+Background:<br>
+<input type="radio" name="style" onclick="switchStyle(1)">Yellow
+</td>
+
+<td>
+Background:  <br>
+<input type="radio" name="style" onclick="switchStyle(2)">Orange
+</td>
+
+<td>
+Background:  <br>
+<input type="radio" name="style" onclick="switchStyle(3)">Light Pink
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+Choose font style:<br>
+<input type="radio" name="fstyle" onclick="switchFontStyle(0)">Italic
+<input type="radio" name="fstyle" onclick="switchFontStyle(1)">Normal
+</td>
+
+<td colspan="2">
+Choose font weight: <br>
+<input type="radio" name="fweight" onclick="switchFontWeight(0)">Bold
+<input type="radio" name="fweight" onclick="switchFontWeight(1)">Normal
+</td>
+</tr>  
+
+<tr>
+<td colspan="2">
+
+<!-- selecting the second option will execute the function selectFontSize()
+and pass the second element whose value is small to the function's variable of
+selectedFontSize, which is linked to the select id of fontSizeDropDown 
+Then if the selectedFontSize has the value of small then the table class of originalTable
+is set to the style of small basicTable.
+-->
+
+Select font size: <br>
+<select name="fontSizeDropDown" id="fontSizeDropDown" onchange="selectFontSize()">
+
+<option value="#">--Select font size--</option> 
+<option value="small">Small</option>                         
+<option value="medium">Medium</option>                        
+<option value="large">Large</option>       
+</select>
+</td>
+<td colspan="2">
+<input type="button" value="Change to Georgia font" onclick="switchToGeorgia()">
+</td>
+</tr>
+
+</tbody>
+</table>
+</form>
+
+<br>
+<input type="button" value="Revert to original" onclick="switchToOrig()">
+      </div>
+</section>
+        
+        
+        <footer class="text-center">
+          <h5>Last updated: 04/22/2019 8:00 PM</h5>
+    <img src="images/images.png" alt="an icon of Html5">
+    <img src="images/vcss-blue.gif" alt="W3C logo">
+ </footer>
+     
+        
+       
+      
+
+        
+        <script>
+/* Change background color using radio buttons:
+
+We need to link up the result of clicking a radio button with the
+script function switchStyle(style) and the class name styles of purple and yellow.
+
+*/
+function switchStyle(style) 
+{
+
+/* if the first radio button was checked then style will = 0, as the first element
+in the radio button array */
+
+    var body = document.getElementById("body");
+    if(style == 0) {
+        body.className = "pink";
+    }
+    else if(style == 1) {
+        body.className = "yellow";
+    }
+    else if(style == 2) {
+        body.className = "orange";
+    }
+    else if(style == 3) {
+        body.className = "lightpink";
+    }
+}
+
+function switchFontStyle(style) 
+{
+    var body = document.getElementById("body");
+    if(style == 0) {
+        body.className = "italic";
+    }
+    else if(style == 1) {
+        body.className = "normal";
+    }
+}
+
+function switchFontWeight(style) 
+{
+    var body = document.getElementById("body");
+    if(style == 0) {
+        body.className = "bold";
+    }
+    else if(style == 1) {
+        body.className = "normal";
+    }
+}
+
+function switchToImpact()
+{
+    var body = document.getElementById("body");
+    body.className = "impactFont";
+}
+
+function switchToGeorgia()
+{
+    var body = document.getElementById("body");
+    body.className = "georgiaFont";
+}
+
+function switchToOrig()
+{
+    
+    var origbody = document.getElementById("body");
+    origbody.className = "originalBody";
+
+   
+    var origTableObject = document.getElementById("originalTable");
+    origTableObject.className = "basicTable";
+}
+
+/* Change font size using a select drop-down menu:
+
+We need to link up the result of selecting an option with the
+script function selectFontSize() and the class name styles of small, medium, and large,
+which will change the font size of ALL of the text in the table
+*/
+
+function selectFontSize()
+{      
+    var origTableObject = document.getElementById("originalTable");    
+    var selectedFontSize = document.getElementById('fontSizeDropDown').value;
+            
+    if (selectedFontSize == "small")
+    {
+        origTableObject.className = "small basicTable";
+    }
+    else if (selectedFontSize == "medium")
+    {
+        origTableObject.className = "medium basicTable";
+    }
+    else if (selectedFontSize == "large")
+    {
+        origTableObject.className = "large basicTable";
+    }           
+}
+</script>
+        
+</body>
+        
+
+   
+        
+</html>
